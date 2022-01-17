@@ -1,0 +1,59 @@
+{
+  "dependencies" : [
+    {
+      "identity" : "base",
+      "name" : "Base",
+      "url" : "/Users/jun.yan/Code/mockingbird_test/Base"
+    }
+  ],
+  "name" : "Middle",
+  "path" : "/Users/jun.yan/Code/mockingbird_test/Middle",
+  "platforms" : [
+
+  ],
+  "products" : [
+    {
+      "name" : "Middle",
+      "targets" : [
+        "Middle"
+      ],
+      "type" : {
+        "library" : [
+          "automatic"
+        ]
+      }
+    }
+  ],
+  "targets" : [
+    {
+      "c99name" : "MiddleTests",
+      "module_type" : "SwiftTarget",
+      "name" : "MiddleTests",
+      "path" : "Tests/MiddleTests",
+      "sources" : [
+        "MiddleTests.swift"
+      ],
+      "target_dependencies" : [
+        "Middle"
+      ],
+      "type" : "test"
+    },
+    {
+      "c99name" : "Middle",
+      "module_type" : "SwiftTarget",
+      "name" : "Middle",
+      "path" : "Sources/Middle",
+      "product_memberships" : [
+        "Middle"
+      ],
+      "sources" : [
+        "Middle.swift"
+      ],
+      "target_dependencies" : [
+
+      ],
+      "type" : "library"
+    }
+  ],
+  "tools_version" : "5.5"
+}
